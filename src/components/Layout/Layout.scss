@@ -1,0 +1,10 @@
+.sidebar {
+  display: flex;
+  flex-direction: row;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

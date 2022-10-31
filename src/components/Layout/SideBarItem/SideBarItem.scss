@@ -1,0 +1,31 @@
+.sidebar-item {
+  display: flex;
+  flex-direction: row;
+
+
+  align-items: center;
+  
+  
+  text-decoration: none;
+  padding: 20px 20px 0px 20px;
+  margin-top: -35px;
+  cursor: pointer;
+
+
+
+
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    margin-left: 10px;
+  //remove underline
+  }
+
+  // react icons
+  svg {
+    font-size: 20px;
+    color: #545f7d;
+  }
+
+}
