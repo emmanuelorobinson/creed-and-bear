@@ -1,9 +1,13 @@
 # Getting Started with Create React App
 
+## Demo build
+https://creed-and-bear.vercel.app/
+
+
+## Available Paths
 Paths include:
 /login
 /users/
-/users/:id
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

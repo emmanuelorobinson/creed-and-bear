@@ -26,7 +26,7 @@ function createRandomUser(): User {
   };
 }
 
-// populate user.data with 10 random users
+// populating user.data with 100 random users
 let users: UserJSON = {
   page: 2,
   per_page: 6,
@@ -48,7 +48,7 @@ export const getUsers = async (): Promise<UserJSON> => {
   });
 };
 
-export const getUser = async (id: string): Promise<User> => {
+export const getUserById = async (id: string): Promise<User> => {
   return new Promise((resolve, reject) => {
     const user = users.data.find((user) => user.id === id);
     if (!user) {
@@ -84,14 +84,23 @@ export const updateUser = async (user: User) => {
   });
 };
 
-export const verifyUser = async (email: string) => {
+interface Response {
+  status: string;
+  user: User;
+}
+
+export const verifyUser = async (email: string): Promise<Response> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const user = users.data.find((user) => user.email === email);
       if (!user) {
         return reject(new Error("No user found"));
       }
+
+      // store in loacl storage for later user
+      localStorage.setItem("user", JSON.stringify(user));
       resolve({ status: "success", user: user });
+
     }, 1000);
   });
 };

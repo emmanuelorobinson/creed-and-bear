@@ -1,7 +1,10 @@
 import React from "react";
 import "./App.css";
+
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+
 import Users from "./pages/Users/Users";
+import UserDetails from "./pages/UserDetails/UserDetails";
 import Login from "./pages/Login/Login";
 import Layout from "./components/Layout/Layout";
 
@@ -21,6 +24,7 @@ function App() {
           >
             <Route path="/" element={<Users />} />
             <Route path="/users" element={<Users />} />
+            <Route path="/users/:id" element={<UserDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>

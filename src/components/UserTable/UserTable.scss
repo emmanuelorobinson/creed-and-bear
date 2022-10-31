@@ -46,6 +46,11 @@
       border-bottom: 1px solid rgba(33, 63, 125, 0.06);
       padding: 20px 20px 20px 0;
       margin: auto;
+      text-decoration: none;
+
+      svg {
+        color: #545f7d;
+      }
     }
   }
 }

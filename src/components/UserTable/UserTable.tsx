@@ -7,6 +7,7 @@ import Pagination from "../Pagination/Pagination";
 
 import { FiEdit2 } from "react-icons/fi";
 import { BiTrash } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 interface Props {
   users: User[];
@@ -18,7 +19,6 @@ const pageSize = 7;
 
 const UserTable = ({ users, deleteUser }: Props) => {
   const [currentPage, setCurrentPage] = React.useState(1);
-  const [navId, setNavId] = React.useState("");
 
 
   const currentTableData = useMemo(() => {
@@ -92,7 +92,10 @@ const UserTable = ({ users, deleteUser }: Props) => {
                 />
               </td>
               <td>
-                <FiEdit2 size={20} />
+                <Link to={`/users/${user.id}`}><FiEdit2 size={20} style={{
+                  cursor: "pointer",
+                }} /></Link>
+                
               </td>
             </tr>
           ))}

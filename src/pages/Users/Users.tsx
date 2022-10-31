@@ -1,12 +1,11 @@
 import "./Users.scss";
 
 import React, { useState, useEffect } from "react";
-import { User } from "../../utils/fakeAPI";
 
 import UserCard from "../../components/Cards/UserCard";
 import UserTable from "../../components/UserTable/UserTable";
 
-import { getUsers, deleteUser } from "../../utils/fakeAPI";
+import {User, getUsers, deleteUser } from "../../utils/fakeAPI";
 
 const Users = () => {
   const [users, fillUsers] = useState<User[]>([]);
