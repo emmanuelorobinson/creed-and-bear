@@ -1,11 +1,14 @@
 import "./Users.scss";
 
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"
 
 import UserCard from "../../components/Cards/UserCard";
 import UserTable from "../../components/UserTable/UserTable";
 
 import {User, getUsers, deleteUser } from "../../utils/fakeAPI";
+
+import {AiFillPlusCircle} from "react-icons/ai";
 
 const Users = () => {
   const [users, fillUsers] = useState<User[]>([]);
@@ -31,7 +34,10 @@ const Users = () => {
 
   return (
     <div className="user-base">
-      <h1>Customers</h1>
+      <div className="user-header"><h1>Customers</h1>
+      <Link to="/users/create"><AiFillPlusCircle size={40} /></Link>
+        
+      </div>
       <div className="user-cards">
         <UserCard title={"Total customers"} amount={"2,420"}></UserCard>
         <UserCard title={"Members"} amount={"1,210"}></UserCard>

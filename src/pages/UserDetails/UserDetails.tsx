@@ -87,7 +87,7 @@ const UserDetails = () => {
             >
               Go back
             </Link>
-            <h1>User Details</h1>
+            <p>change field to enable update button </p>
           </div>
           <div className="detail-box">
             <div>

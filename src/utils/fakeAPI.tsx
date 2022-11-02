@@ -64,7 +64,10 @@ export const getUserById = async (id: string): Promise<User> => {
 
 export const addUser = async (user: User) => {
   return new Promise((resolve, reject) => {
+
     setTimeout(() => {
+      // add new user UUID to user object
+      user.id = faker.datatype.uuid();
       users.data.push(user);
       resolve({ status: "success" });
     }, 1000);

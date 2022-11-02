@@ -8,6 +8,10 @@ https://creed-and-bear.vercel.app/
 Paths include:
 /login
 /users/
+/users/:id
+/users/create
+
+## Screenshots
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
