@@ -9,9 +9,14 @@ Paths include:
 /login
 /users/
 /users/:id
-/users/create
+/users/create (top left of page)
 
 ## Screenshots
+![localhost_3000_users (2)](https://user-images.githubusercontent.com/52470812/199494378-69c834ca-cf81-4908-8f06-68085260ac5c.png)
+
+![localhost_3000_users_create](https://user-images.githubusercontent.com/52470812/199494644-d4723d2d-98b4-424d-89f5-bf77f9587577.png)
+
+![localhost_3000_users_create (1)](https://user-images.githubusercontent.com/52470812/199494955-199818c7-f1c5-4a79-886b-2617e021a0c3.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
