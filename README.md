@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 ## Demo build
-https://creed-and-bear.vercel.app/
+https://emmanuel-creed-and-bear.vercel.app/
 
 
 ## Available Paths

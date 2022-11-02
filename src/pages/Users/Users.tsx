@@ -35,7 +35,7 @@ const Users = () => {
   return (
     <div className="user-base">
       <div className="user-header"><h1>Customers</h1>
-      <Link to="/users/create"><AiFillPlusCircle size={40} /></Link>
+      <Link to="/users/create" id="create-user-button"><AiFillPlusCircle size={40}/></Link>
         
       </div>
       <div className="user-cards">
