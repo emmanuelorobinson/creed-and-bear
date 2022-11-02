@@ -71,7 +71,9 @@ const UserDetails = () => {
   };
 
   return (
-    <div>
+    <div style={{
+      height: "100vh",
+    }}>
       {user ? (
         <div>
           <div>
